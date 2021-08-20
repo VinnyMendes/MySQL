@@ -1,0 +1,18 @@
+select * from estudantes limit 5;
+select * from estudantes where estudante_id > 10;
+select estudante_nome from estudantes;
+select * from estudantes where estudante_idade = 18;
+select * from estudantes where estudante_idade > 40;
+select * from estudantes where estudante_idade >= 65;
+select * from estudantes where estudante_idade < 35;
+select * from estudantes where estudante_idade <= 30;
+select * from estudantes where estudante_idade <> 40;
+select * from estudantes where escola_id is null;
+select * from estudantes where estudante_idade between 32 and 45;
+select * from estudantes where estudante_idade = 18 or estudante_idade = 35 or estudante_idade = 52;
+select * from estudantes where estudante_nome like 'a%';
+select estudante_nome, estudante_idade from estudantes order by estudante_idade desc;
+select estudante_nome, estudante_idade from estudantes order by estudante_idade;
+select * from estudantes limit 15 offset 20;
+SET SQL_SAFE_UPDATES = 0;
+delete from estudantes where estudante_idade = 18;
